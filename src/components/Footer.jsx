@@ -26,9 +26,21 @@ export default function Footer() {
         <div className={styles.footerCol}>
           <h4 className={styles.colTitle}>Contact</h4>
           <ul className={styles.contactList}>
-            <li><MapPin size={18} /> {config.contact.address}</li>
-            <li><Mail size={18} /> {config.contact.email}</li>
-            <li><Phone size={18} /> {config.contact.phone}</li>
+            <li><MapPin size={18} />
+              <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47490e809171d439:0xbf81fdd421ec007b?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener noreferrer">
+                {config.contact.address}
+              </a>
+            </li>
+            <li><Mail size={18} />
+              <a href={`mailto:${config.contact.email}`}>
+                {config.contact.email}
+              </a>
+            </li>
+            <li><Phone size={18} />
+              <a href={`tel:${config.contact.phone}`}>
+                {config.contact.phone}
+              </a>
+            </li>
           </ul>
         </div>
 
