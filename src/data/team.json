@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Andreea Ilca",
+    "role": "Coordonator Principal",
+    "image": "/assets/andreea.jpeg",
+    "social": "https://www.instagram.com/andreeailca_/"
+  },
+  {
+    "id": 2,
+    "name": "Bodo Adelin",
+    "role": "Secretar",
+    "image": "/assets/bodo.jpeg",
+    "social": "https://www.instagram.com/01_bodo/"
+  },
+  {
+    "id": 3,
+    "name": "Denisa Crefelean",
+    "role": "Coordonator Imagine&PR",
+    "image": "/assets/deni.jpeg",
+    "social": "https://www.instagram.com/crefeleandenisa/"
+  },
+  {
+    "id": 4,
+    "name": "Ioana Iancu",
+    "role": "Coordonator Activități",
+    "image": "/assets/ioana.jpeg",
+    "social": "https://www.instagram.com/ioana._.10/"
+  },
+  {
+    "id": 5,
+    "name": "Nicoleta Albu",
+    "role": "Coordonator Voluntari",
+    "image": "/assets/nico.jpeg",
+    "social": "https://www.instagram.com/albunicoleta01/"
+  },
+  {
+    "id": 6,
+    "name": "Diana Geană",
+    "role": "Coordonator Financiar",
+    "image": "/assets/diana.jpeg",
+    "social": "https://www.instagram.com/didieg6/"
+  },
+  {
+    "id": 7,
+    "name": "Iulia Ciobotariu",
+    "role": "Responsabil din partea Biroului de Conducere",
+    "image": "/assets/iulia.jpeg",
+    "social": "https://www.instagram.com/ciobotariulia/"
+  }
+]

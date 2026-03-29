@@ -1,0 +1,225 @@
+.pageWrapper {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.mission {
+  font-size: 1.15rem;
+  color: white;
+  background: rgba(143, 0, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(143, 0, 255, 0.3);
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: var(--font-display);
+}
+
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.teamCard {
+  flex: 0 0 calc(25% - 1.5rem);
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(143, 0, 255, 0.4);
+  box-shadow: 0 8px 40px rgba(143, 0, 255, 0.15);
+}
+
+@media (max-width: 1100px) {
+  .teamCard {
+    flex: 0 0 calc(33.333% - 1.333rem);
+  }
+}
+
+@media (max-width: 800px) {
+  .teamCard {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .teamCard {
+    flex: 0 0 100%;
+  }
+}
+
+.imageWrapper {
+  height: 250px;
+  background: var(--bg-color-soft);
+  position: relative;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-color-soft), var(--accent-glow));
+}
+
+.memberInfo {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.memberInfo h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-body);
+}
+
+.memberInfo p {
+  color: var(--accent-tertiary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: var(--accent-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2rem;
+  margin: 4rem 0;
+}
+
+.table th {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  text-align: center;
+  padding-bottom: 2rem;
+  vertical-align: bottom;
+}
+
+.table td {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  vertical-align: center;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 33.333%;
+}
+
+.table td:hover {
+  transform: translateY(-8px);
+  border-color: rgba(143, 0, 255, 0.4);
+  box-shadow: 0 8px 40px rgba(143, 0, 255, 0.15);
+}
+
+@media (max-width: 900px) {
+  .table {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .table thead {
+    display: none;
+    /* Hide headers on mobile */
+  }
+
+  .table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .table td {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top: 5rem;
+  }
+
+  /* Inject titles into cells on mobile */
+  .table td::before {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.25rem;
+    font-family: var(--font-display);
+    font-weight: bold;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .table td:nth-child(1)::before {
+    content: 'UBB Festival Sports';
+  }
+
+  .table td:nth-child(2)::before {
+    content: 'UBB Festival Kick-Off';
+  }
+
+  .table td:nth-child(3)::before {
+    content: 'UBB Festival';
+  }
+}

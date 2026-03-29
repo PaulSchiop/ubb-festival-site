@@ -1,0 +1,102 @@
+.scheduleSection {
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tabBtn {
+  position: relative;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+.tabBtn:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.tabBtn.active {
+  color: white;
+  border-color: transparent;
+}
+
+.tabContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tabDay {
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+}
+
+.tabDate {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.activeIndicator {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(var(--accent-secondary), var(--accent-primary));
+  z-index: 1;
+}
+
+.eventsContainer {
+  min-height: 400px;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tabsContainer {
+    gap: 0.5rem;
+  }
+
+  .tabBtn {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+  }
+}
