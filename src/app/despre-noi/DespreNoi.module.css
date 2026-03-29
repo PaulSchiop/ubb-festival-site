@@ -190,16 +190,12 @@
   .table td {
     display: block;
     width: 100%;
-    position: relative;
-    padding-top: 5rem;
   }
 
   /* Inject titles into cells on mobile */
   .table td::before {
-    position: absolute;
-    top: 1.5rem;
-    left: 2.5rem;
-    right: 2.5rem;
+    display: block;
+    margin-bottom: 1.5rem;
     font-size: 1.25rem;
     font-family: var(--font-display);
     font-weight: bold;
