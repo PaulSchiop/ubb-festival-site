@@ -17,14 +17,14 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(143, 0, 255, 0.15);
-  color: var(--accent-primary);
+  background: rgba(175, 255, 0, 0.15);
+  color: #afff00;
   border-radius: var(--radius-full);
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   width: fit-content;
-  border: 1px solid rgba(143, 0, 255, 0.3);
+  border: 1px solid rgba(175, 255, 0, 0.3);
 }
 
 .title {
