@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import config from '../data/config.json';
 import styles from './Footer.module.css';
+import { InstagramIcon } from './icons/InstagramIcon';
+import { FacebookIcon } from './icons/FacebookIcon';
 
 export default function Footer() {
   return (
@@ -13,7 +15,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerCol}>
-          <h4 className={styles.colTitle}>Linkuri Utile</h4>
+          <h4 className={styles.colTitle}>Link-uri Utile</h4>
           <ul className={styles.linkList}>
             <li><Link href="/">Acasă</Link></li>
             <li><Link href="/despre-noi">Despre Noi</Link></li>
@@ -32,6 +34,14 @@ export default function Footer() {
 
         <div className={styles.footerCol}>
           <h4 className={styles.colTitle}>Urmărește-ne</h4>
+          <div className={styles.socials}>
+            <a href="https://www.instagram.com/ubbfestival/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
+              <InstagramIcon />
+            </a>
+            <a href="https://www.facebook.com/UBBFestival" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">
+              <FacebookIcon />
+            </a>
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>
