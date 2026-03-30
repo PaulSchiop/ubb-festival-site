@@ -19,11 +19,10 @@
 
 .bgImage {
   width: 100%;
-  height: 100%;
+  height: 120%; /* Increased for parallax */
   object-fit: cover;
   object-position: center;
   filter: brightness(0.6);
-  transform: scale(1.05);
 }
 
 .overlay {
@@ -88,6 +87,10 @@
 .secondaryBtn:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
+}
+
+.secondaryBtn:active {
+  transform: translateY(0) scale(0.95);
 }
 
 .scrollIndicator {

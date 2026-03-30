@@ -63,6 +63,7 @@ export default function DespreNoi() {
                       fill
                       sizes="(max-width: 768px) 100vw, 300px"
                       style={{ objectFit: 'cover' }}
+                      className={styles.memberImage}
                     />
                   ) : (
                     <div className={styles.imagePlaceholder}></div>

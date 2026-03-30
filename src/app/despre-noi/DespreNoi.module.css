@@ -82,6 +82,15 @@
   height: 250px;
   background: var(--bg-color-soft);
   position: relative;
+  overflow: hidden;
+}
+
+.memberImage {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.teamCard:hover .memberImage {
+  transform: scale(1.1);
 }
 
 .imagePlaceholder {

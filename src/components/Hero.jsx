@@ -1,16 +1,30 @@
 'use client'
-import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import styles from './Hero.module.css';
 import config from '../data/config.json';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+  
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+
   return (
-    <section className={styles.hero}>
+    <section ref={ref} className={styles.hero}>
       <div className={styles.bgWrapper}>
         <div className={styles.overlay}></div>
-        <img src="/assets/newcoversite.jpeg" alt="Hero background" className={styles.bgImage} />
+        <motion.img 
+          src="/assets/newcoversite.jpeg" 
+          alt="Hero background" 
+          className={styles.bgImage} 
+          style={{ y, scale: 1.05 }}
+        />
       </div>
 
       <div className={`container ${styles.content}`}>

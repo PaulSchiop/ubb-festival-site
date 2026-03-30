@@ -109,6 +109,11 @@ h6 {
   color: white;
 }
 
+.btn:active {
+  transform: translateY(0) scale(0.95);
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+
 /* Animations that are highly requested */
 @keyframes fadeIn {
   from {
