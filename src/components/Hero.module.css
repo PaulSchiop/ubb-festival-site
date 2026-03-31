@@ -19,7 +19,7 @@
 
 .bgImage {
   width: 100%;
-  height: 120%; /* Increased for parallax */
+  height: 100%;
   object-fit: cover;
   object-position: center;
   filter: brightness(0.6);
