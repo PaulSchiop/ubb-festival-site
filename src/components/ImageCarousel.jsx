@@ -1,7 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 import styles from './ImageCarousel.module.css';
 
 // Make sure to add these images to public/assets/
@@ -25,7 +26,7 @@ export default function ImageCarousel() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(timer);
   }, [currentIndex]);
 
@@ -39,22 +40,28 @@ export default function ImageCarousel() {
           </button>
 
           <div className={styles.imageWrapper}>
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={currentIndex}
-                src={images[currentIndex]}
-                className={styles.carouselImage}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                alt={`Imagine editie anterioara ${currentIndex + 1}`}
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.parentElement.innerHTML += '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:gray;">Adaugă imaginea în folderul assets!</div>';
+            {images.map((src, index) => (
+              <motion.div
+                key={index}
+                initial={false}
+                animate={{ 
+                  opacity: currentIndex === index ? 1 : 0,
+                  scale: currentIndex === index ? 1 : 1.05,
+                  zIndex: currentIndex === index ? 1 : 0
                 }}
-              />
-            </AnimatePresence>
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              >
+                <Image
+                  src={src}
+                  alt={`Imagine editie anterioara ${index + 1}`}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 768px) 100vw, 900px"
+                  priority={index === 0}
+                />
+              </motion.div>
+            ))}
           </div>
 
           <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={nextSlide}>
