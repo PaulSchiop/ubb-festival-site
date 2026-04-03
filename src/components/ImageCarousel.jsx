@@ -6,9 +6,14 @@ import styles from './ImageCarousel.module.css';
 
 // Make sure to add these images to public/assets/
 const images = [
-  '/assets/Poze-basket_01-890x664.jpg',
-  '/assets/Poze-volei_10-890x664.jpg',
-  '/assets/MG_1352-Enhanced-NR-scaled.jpg'
+  '/assets/1.jpg',
+  '/assets/2.jpg',
+  '/assets/3.jpg',
+  '/assets/4.jpg',
+  '/assets/5.jpg',
+  '/assets/6.jpg',
+  '/assets/7.jpg',
+  '/assets/8.jpg',
 ];
 
 export default function ImageCarousel() {
