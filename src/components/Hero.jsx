@@ -11,7 +11,7 @@ export default function Hero() {
       <div className={styles.bgWrapper}>
         <div className={styles.overlay}></div>
         <img
-          src="/assets/newcoversite.jpeg"
+          src="/assets/Cover2festival.png"
           alt="Hero background"
           className={styles.bgImage}
         />
