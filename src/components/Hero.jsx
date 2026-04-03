@@ -42,7 +42,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Link href="#schedule" className={`btn ${styles.primaryBtn}`}>
+          <Link href="/sport" className={`btn ${styles.primaryBtn}`}>
             Înscrie-te la Sports
           </Link>
           <Link href="/despre-noi" className={styles.secondaryBtn}>
