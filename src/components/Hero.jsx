@@ -10,10 +10,10 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.bgWrapper}>
         <div className={styles.overlay}></div>
-        <img 
-          src="/assets/newcoversite.jpeg" 
-          alt="Hero background" 
-          className={styles.bgImage} 
+        <img
+          src="/assets/newcoversite.jpeg"
+          alt="Hero background"
+          className={styles.bgImage}
         />
       </div>
 
@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Link href="#schedule" className={`btn ${styles.primaryBtn}`}>
-            Vezi Programul
+            Înscrie-te la Sports
           </Link>
           <Link href="/despre-noi" className={styles.secondaryBtn}>
             Despre Noi
