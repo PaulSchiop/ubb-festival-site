@@ -25,6 +25,7 @@ export default function Header() {
         <div className={`${styles.links} ${mobileOpen ? styles.open : ''}`}>
           <Link href="/" onClick={() => setMobileOpen(false)}>Acasă</Link>
           <Link href="/despre-noi" onClick={() => setMobileOpen(false)}>Despre Noi</Link>
+          <Link href="/sport" onClick={() => setMobileOpen(false)}>Sport</Link>
           <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
         </div>
         <button className={styles.menuBtn} onClick={() => setMobileOpen(!mobileOpen)}>
