@@ -3,6 +3,7 @@ import Schedule from '../components/Schedule';
 import AboutPreview from '../components/AboutPreview';
 import ImageCarousel from '../components/ImageCarousel';
 import Sponsor from '../components/Sponsor';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutPreview />
       <ImageCarousel />
       <Sponsor />
+      <Analytics />
     </>
   );
 }
