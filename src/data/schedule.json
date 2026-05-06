@@ -1,55 +1,117 @@
 [
   {
     "day": "Ziua 1",
-    "date": "11 Mai",
+    "date": "8 Mai",
     "events": [
       {
-        "time": "10:00 - 14:00",
-        "title": "Tur ghidat la Muzeul Zoologic",
-        "location": "Strada Clinicilor nr. 5-7, Muzeul Zoologic",
-        "organizer": "Muzeul Zoologic"
+        "time": "14:00 - 16:00",
+        "title": "Workshop Funky Citizens",
+        "location": "Facultatea de Studii Europene",
+        "organizer": "Funky citizens",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSf-wb4xhcmts9x-dixM-_aiKL0ubHegw1kRcwtCnOYaU2qbCg/viewform"
       },
       {
-        "time": "14:00 - 17:00",
-        "title": "Tur ghidat la Grădina Botanică",
-        "location": "Strada Republicii nr. 42",
-        "organizer": "Grădina Botanică"
+        "time": "16:00 - 17:00",
+        "title": "Atelier Pictat CD-uri",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "OSUBB",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdqwKzN_M7Qsdap4Nn4zNLrf2ccHL5xzedu8L8_RoO0yCKl3g/viewform"
       },
       {
-        "time": "14:00 - 18:00",
-        "title": "Treasurehunt",
-        "location": "Clădirea Centrală UBB",
-        "organizer": "PhiloHistorisS"
+        "time": "17:30 - 19:30",
+        "title": "Atelier Graffiti",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "ASUAD",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdqwKzN_M7Qsdap4Nn4zNLrf2ccHL5xzedu8L8_RoO0yCKl3g/viewform"
       },
       {
-        "time": "16:00 - 18:00",
-        "title": "Sesiune despre combaterea hărțuirii stradale",
-        "location": "SALA Amfiteatru P6, Facultatea de Drept",
-        "organizer": "ASFB"
+        "time": "18:30 - 20:30",
+        "title": "Workshop DJ",
+        "location": "Yolka",
+        "organizer": "Raul Mahari",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScBTl5q7tgXhXqvdbSpIoDuRkpntgh98QRSYXH0v7nmnX4n2Q/viewform"
+      },
+      {
+        "time": "20:00 - 21:30",
+        "title": "Sip&Clay",
+        "location": "Insomnia",
+        "organizer": "OSUBB",
+        "link": "#"
       }
     ]
   },
   {
     "day": "Ziua 2",
-    "date": "12 Mai",
+    "date": "9 Mai",
     "events": [
       {
-        "time": "13:00 - 17:00",
-        "title": "Tur ghidat la Muzeul de Mineralogie",
-        "location": "Clădirea Centrală UBB",
-        "organizer": "UBB"
+        "time": "16:00 - 18:00",
+        "title": "Atelier Shibori",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "ASUAD",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdqwKzN_M7Qsdap4Nn4zNLrf2ccHL5xzedu8L8_RoO0yCKl3g/viewform"
       },
       {
-        "time": "14:00 - 16:00",
-        "title": "Workshop 'Cum să ieși din zona de confort'",
-        "location": "SALA FERDINAND, Strada I.C. Brătianu nr. 22",
-        "organizer": "ASPR"
+        "time": "17:30 - 18:10",
+        "title": "Concert High Velocity",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "High Velocity",
+        "link": "#"
       },
       {
-        "time": "19:00 - 21:00",
-        "title": "Cinemateca ASFTF",
-        "location": "SALA CINEMA, FTF",
-        "organizer": "ASFTF"
+        "time": "18:30 - 19:10",
+        "title": "Concert Outnumbered",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "Outnumbered",
+        "link": "#"
+      },
+      {
+        "time": "18:30 - 19:10",
+        "title": "Concert Dean Klooge",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "Dean Klooge",
+        "link": "#"
+      },
+      {
+        "time": "18:30 - 19:10",
+        "title": "Concert The Kryptonite Sparks",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "The Kryptonite Sparks",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "day": "Ziua 3",
+    "date": "10 Mai",
+    "events": [
+      {
+        "time": "15:00 - 17:00",
+        "title": "Atelier de Pictură pe Tote Bag",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "Art Point Studio",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSd2i16IalsI-qtPbCiCYD9HSeWGX_4GxwMLoLrUz6UgonInDA/viewform?fbzx=8683798745009701694"
+      },
+      {
+        "time": "17:00 - 18:00",
+        "title": "Atelier Ebru",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "ASUAD",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdqwKzN_M7Qsdap4Nn4zNLrf2ccHL5xzedu8L8_RoO0yCKl3g/viewform"
+      },
+      {
+        "time": "14:00 - 20:00",
+        "title": "Catrafusale",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "Rotaract",
+        "link": "#"
+      },
+      {
+        "time": "19:00 - 20:30",
+        "title": "Chităreală în Chillzone",
+        "location": "Str. Mihail Kogălniceanu",
+        "organizer": "OSUBB",
+        "link": "#"
       }
     ]
   }

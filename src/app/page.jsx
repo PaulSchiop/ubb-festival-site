@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <AboutPreview />
+      <Schedule />
       <ImageCarousel />
       <Sponsor />
       <Analytics />
